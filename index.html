@@ -25,9 +25,10 @@
             --glass-bg: rgba(255, 255, 255, 0.15);
             --glass-border: rgba(255, 255, 255, 0.2);
             --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            --green-primary: #10b981;
-            --green-secondary: #047857;
-            --green-light: #d1fae5;
+            --primary: #6366f1;
+            --secondary: #4f46e5;
+            --light: #e0e7ff;
+            --accent: #8b5cf6;
         }
 
         /* Enhanced Glassmorphism */
@@ -48,7 +49,7 @@
         }
 
         .glass-header {
-            background: rgba(16, 185, 129, 0.9);
+            background: rgba(99, 102, 241, 0.9);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -77,8 +78,8 @@
         }
 
         @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.3); }
-            50% { box-shadow: 0 0 40px rgba(16, 185, 129, 0.6); }
+            0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(99, 102, 241, 0.6); }
         }
 
         @keyframes gradient-shift {
@@ -109,7 +110,7 @@
         }
 
         .animate-gradient {
-            background: linear-gradient(-45deg, #10b981, #047857, #059669, #065f46);
+            background: linear-gradient(-45deg, #6366f1, #4f46e5, #8b5cf6, #7c3aed);
             background-size: 400% 400%;
             animation: gradient-shift 4s ease infinite;
         }
@@ -124,8 +125,8 @@
             height: 200px;
             border-radius: 50%;
             border: 6px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
-            background: linear-gradient(135deg, #10b981, #047857);
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.4);
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -241,7 +242,7 @@
         /* Floating particles */
         .particle {
             position: absolute;
-            background: rgba(16, 185, 129, 0.6);
+            background: rgba(99, 102, 241, 0.6);
             border-radius: 50%;
             pointer-events: none;
         }
@@ -272,7 +273,7 @@
 
         /* Footer styling */
         .footer {
-            background: rgba(16, 185, 129, 0.95);
+            background: rgba(99, 102, 241, 0.95);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -293,7 +294,7 @@
                     </div>
                     <div class="hidden sm:block">
                         <h1 class="text-xl lg:text-2xl font-bold text-white">Gopinath V</h1>
-                        <p class="text-sm text-green-100">AWS & DevOps Engineer</p>
+                        <p class="text-sm text-indigo-100">AWS & DevOps Engineer</p>
                     </div>
                 </div>
 
@@ -396,43 +397,43 @@
                     <div class="glass-card rounded-3xl p-6 lg:p-10 hover-lift">
                         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
                             <div>
-                                <h3 class="text-2xl lg:text-3xl font-semibold text-green-600 mb-4 lg:mb-6">AWS Cloud Architecture</h3>
+                                <h3 class="text-2xl lg:text-3xl font-semibold text-indigo-600 mb-4 lg:mb-6">AWS Cloud Architecture</h3>
                                 <p class="text-gray-700 mb-4 lg:mb-6 text-base lg:text-lg">
                                     Hands-on experience designing and implementing cloud solutions on AWS. 
                                     Focused on creating cost-effective, scalable architectures that meet business requirements.
                                 </p>
                                 <ul class="space-y-3 text-gray-600">
                                     <li class="flex items-center">
-                                        <span class="w-3 h-3 bg-green-500 rounded-full mr-4"></span>
+                                        <span class="w-3 h-3 bg-indigo-500 rounded-full mr-4"></span>
                                         EC2, S3, Lambda, and RDS implementations
                                     </li>
                                     <li class="flex items-center">
-                                        <span class="w-3 h-3 bg-green-500 rounded-full mr-4"></span>
+                                        <span class="w-3 h-3 bg-indigo-500 rounded-full mr-4"></span>
                                         VPC configuration and security best practices
                                     </li>
                                     <li class="flex items-center">
-                                        <span class="w-3 h-3 bg-green-500 rounded-full mr-4"></span>
+                                        <span class="w-3 h-3 bg-indigo-500 rounded-full mr-4"></span>
                                         CloudFormation and Infrastructure as Code
                                     </li>
                                 </ul>
                             </div>
                             <div>
-                                <h3 class="text-2xl lg:text-3xl font-semibold text-green-600 mb-4 lg:mb-6">DevOps & Automation</h3>
+                                <h3 class="text-2xl lg:text-3xl font-semibold text-indigo-600 mb-4 lg:mb-6">DevOps & Automation</h3>
                                 <p class="text-gray-700 mb-4 lg:mb-6 text-base lg:text-lg">
                                     Practical experience with DevOps practices, focusing on automation, continuous integration, 
                                     and delivery pipelines to improve deployment efficiency and reliability.
                                 </p>
                                 <ul class="space-y-3 text-gray-600">
                                     <li class="flex items-center">
-                                        <span class="w-3 h-3 bg-green-500 rounded-full mr-4"></span>
+                                        <span class="w-3 h-3 bg-indigo-500 rounded-full mr-4"></span>
                                         Docker containerization and orchestration
                                     </li>
                                     <li class="flex items-center">
-                                        <span class="w-3 h-3 bg-green-500 rounded-full mr-4"></span>
+                                        <span class="w-3 h-3 bg-indigo-500 rounded-full mr-4"></span>
                                         Jenkins and GitHub Actions CI/CD pipelines
                                     </li>
                                     <li class="flex items-center">
-                                        <span class="w-3 h-3 bg-green-500 rounded-full mr-4"></span>
+                                        <span class="w-3 h-3 bg-indigo-500 rounded-full mr-4"></span>
                                         Linux system administration and scripting
                                     </li>
                                 </ul>
@@ -447,8 +448,8 @@
                     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                         <div class="glass-card rounded-2xl p-6 lg:p-8 hover-lift">
                             <div class="flex items-center mb-4 lg:mb-6">
-                                <div class="p-3 lg:p-4 bg-green-100 rounded-xl mr-4 animate-pulse-glow">
-                                    <i data-lucide="cloud" class="h-6 w-6 lg:h-8 lg:w-8 text-green-600"></i>
+                                <div class="p-3 lg:p-4 bg-indigo-100 rounded-xl mr-4 animate-pulse-glow">
+                                    <i data-lucide="cloud" class="h-6 w-6 lg:h-8 lg:w-8 text-indigo-600"></i>
                                 </div>
                                 <h3 class="text-lg lg:text-xl font-semibold text-gray-900">AWS Services</h3>
                             </div>
@@ -456,8 +457,8 @@
                         </div>
                         <div class="glass-card rounded-2xl p-6 lg:p-8 hover-lift">
                             <div class="flex items-center mb-4 lg:mb-6">
-                                <div class="p-3 lg:p-4 bg-green-100 rounded-xl mr-4 animate-pulse-glow">
-                                    <i data-lucide="server" class="h-6 w-6 lg:h-8 lg:w-8 text-green-600"></i>
+                                <div class="p-3 lg:p-4 bg-indigo-100 rounded-xl mr-4 animate-pulse-glow">
+                                    <i data-lucide="server" class="h-6 w-6 lg:h-8 lg:w-8 text-indigo-600"></i>
                                 </div>
                                 <h3 class="text-lg lg:text-xl font-semibold text-gray-900">Infrastructure</h3>
                             </div>
@@ -465,8 +466,8 @@
                         </div>
                         <div class="glass-card rounded-2xl p-6 lg:p-8 hover-lift">
                             <div class="flex items-center mb-4 lg:mb-6">
-                                <div class="p-3 lg:p-4 bg-green-100 rounded-xl mr-4 animate-pulse-glow">
-                                    <i data-lucide="git-branch" class="h-6 w-6 lg:h-8 lg:w-8 text-green-600"></i>
+                                <div class="p-3 lg:p-4 bg-indigo-100 rounded-xl mr-4 animate-pulse-glow">
+                                    <i data-lucide="git-branch" class="h-6 w-6 lg:h-8 lg:w-8 text-indigo-600"></i>
                                 </div>
                                 <h3 class="text-lg lg:text-xl font-semibold text-gray-900">CI/CD</h3>
                             </div>
@@ -474,8 +475,8 @@
                         </div>
                         <div class="glass-card rounded-2xl p-6 lg:p-8 hover-lift">
                             <div class="flex items-center mb-4 lg:mb-6">
-                                <div class="p-3 lg:p-4 bg-green-100 rounded-xl mr-4 animate-pulse-glow">
-                                    <i data-lucide="database" class="h-6 w-6 lg:h-8 lg:w-8 text-green-600"></i>
+                                <div class="p-3 lg:p-4 bg-indigo-100 rounded-xl mr-4 animate-pulse-glow">
+                                    <i data-lucide="database" class="h-6 w-6 lg:h-8 lg:w-8 text-indigo-600"></i>
                                 </div>
                                 <h3 class="text-lg lg:text-xl font-semibold text-gray-900">Databases</h3>
                             </div>
@@ -483,8 +484,8 @@
                         </div>
                         <div class="glass-card rounded-2xl p-6 lg:p-8 hover-lift">
                             <div class="flex items-center mb-4 lg:mb-6">
-                                <div class="p-3 lg:p-4 bg-green-100 rounded-xl mr-4 animate-pulse-glow">
-                                    <i data-lucide="shield" class="h-6 w-6 lg:h-8 lg:w-8 text-green-600"></i>
+                                <div class="p-3 lg:p-4 bg-indigo-100 rounded-xl mr-4 animate-pulse-glow">
+                                    <i data-lucide="shield" class="h-6 w-6 lg:h-8 lg:w-8 text-indigo-600"></i>
                                 </div>
                                 <h3 class="text-lg lg:text-xl font-semibold text-gray-900">Security</h3>
                             </div>
@@ -492,8 +493,8 @@
                         </div>
                         <div class="glass-card rounded-2xl p-6 lg:p-8 hover-lift">
                             <div class="flex items-center mb-4 lg:mb-6">
-                                <div class="p-3 lg:p-4 bg-green-100 rounded-xl mr-4 animate-pulse-glow">
-                                    <i data-lucide="zap" class="h-6 w-6 lg:h-8 lg:w-8 text-green-600"></i>
+                                <div class="p-3 lg:p-4 bg-indigo-100 rounded-xl mr-4 animate-pulse-glow">
+                                    <i data-lucide="zap" class="h-6 w-6 lg:h-8 lg:w-8 text-indigo-600"></i>
                                 </div>
                                 <h3 class="text-lg lg:text-xl font-semibold text-gray-900">Monitoring</h3>
                             </div>
@@ -557,43 +558,43 @@
                 <!-- What You'll Find Section -->
                 <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
                     <div class="glass-card rounded-2xl p-6 lg:p-8 hover-lift">
-                        <h3 class="text-xl lg:text-2xl font-semibold text-green-600 mb-4 lg:mb-6">What You'll Find</h3>
+                        <h3 class="text-xl lg:text-2xl font-semibold text-indigo-600 mb-4 lg:mb-6">What You'll Find</h3>
                         <ul class="space-y-3 lg:space-y-4 text-gray-700">
                             <li class="flex items-start">
-                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                                 <span>Regular updates on AWS services and best practices</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                                 <span>DevOps insights and automation tips</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                                 <span>Career development and learning resources</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                                 <span>Project showcases and case studies</span>
                             </li>
                         </ul>
                     </div>
 
                     <div class="glass-card rounded-2xl p-6 lg:p-8 hover-lift">
-                        <h3 class="text-xl lg:text-2xl font-semibold text-green-600 mb-4 lg:mb-6">Let's Collaborate</h3>
+                        <h3 class="text-xl lg:text-2xl font-semibold text-indigo-600 mb-4 lg:mb-6">Let's Collaborate</h3>
                         <p class="text-gray-700 mb-4 lg:mb-6">
                             I'm always interested in connecting with fellow professionals in the cloud and DevOps space.
                         </p>
                         <ul class="space-y-3 lg:space-y-4 text-gray-700">
                             <li class="flex items-start">
-                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                                 <span>Consulting opportunities</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                                 <span>Knowledge sharing and mentoring</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                                 <span>Technical discussions and networking</span>
                             </li>
                         </ul>
@@ -870,7 +871,7 @@
             
             setInterval(() => {
                 const sparkle = document.createElement('div');
-                sparkle.className = 'fixed w-1 h-1 bg-green-400 rounded-full pointer-events-none z-10';
+                sparkle.className = 'fixed w-1 h-1 bg-indigo-400 rounded-full pointer-events-none z-10';
                 sparkle.style.left = Math.random() * window.innerWidth + 'px';
                 sparkle.style.top = Math.random() * window.innerHeight + 'px';
                 sparkle.style.animation = 'sparkle 2s ease-in-out forwards';
